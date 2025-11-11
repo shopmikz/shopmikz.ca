@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>My Page</title>
+    <style>
+      /* Remove margins and padding from all elements */
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-<head>
-  <title>My Page</title>
-  <style>
-    /* Remove margins and padding from all elements */
-    * {
-      margin: 0;
-      padding: 0;
-    }
+      /* Add a responsive style for the heading image */
+      .heading-container img {
+        max-width: 100%;
+        max-height: 85vh;
+        object-fit: cover;
+        /* Keep the aspect ratio and fill the container */
+      }
 
-    /* Add a responsive style for the heading image */
-    .heading-container img {
-      max-width: 100%;
-      max-height: 85vh;
-      object-fit: cover;
-      /* Keep the aspect ratio and fill the container */
-    }
+      /* Center the heading image */
+      .heading-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-height: 100vh;
+      }
 
-    /* Center the heading image */
-    .heading-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      max-height: 100vh;
-    }
+      /* Make the caption bigger and center it horizontally */
+      figcaption {
+        font-size: 36px;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bolder;
+      }
 
-    /* Make the caption bigger and center it horizontally */
-    figcaption {
-      font-size: 36px;
-      text-align: center;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bolder;
-    }
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+    </style>
+  </head>
 
-    body {
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Wrap the heading image in a div with the heading-container class -->
-  <figure class="heading-container">
-    <img src="https://cdn.discordapp.com/attachments/729211054940487710/1049389500108914698/Untitled_Artwork.png"
-      alt="Heading" class="heading">
-    <figcaption>Site Under Construction</figcaption>
-  </figure>
-</body>
-
+  <body>
+    <!-- Wrap the heading image in a div with the heading-container class -->
+    <figure class="heading-container">
+      <img src="./asset/blueprint_piggy.png" alt="Heading" class="heading" />
+      <figcaption>Site Under Construction</figcaption>
+    </figure>
+  </body>
 </html>
